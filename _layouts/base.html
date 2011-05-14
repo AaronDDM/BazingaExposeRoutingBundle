@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
+  <head>
+    <title>{{ page.title }} | A Bazinga project.</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="language" content="en" />
+    <link rel="stylesheet" type="text/css" media="all" href="http://yui.yahooapis.com/2.8.0r4/build/reset/reset-min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/layout.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/markdown.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/base_syntax.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/syntax.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="fond">
+      <div class="dm_layout">
+        <ul class="topmenu">
+          <li class="first element">
+            <a class="link" href="http://www.bazingaweb.fr/services">Services</a>
+          </li>
+          <li class="element">
+            <a class="link" href="http://www.bazingaweb.fr/news">News</a>
+          </li>
+          <li class="element">
+            <a class="link" href="http://dev.bazingaweb.fr/">Dev blog</a>
+          </li>
+          <li class="last element">
+            <a class="link" href="http://www.bazingaweb.fr/contact-us" title="Contact us">Contact</a>
+          </li>
+        </ul>
+        <div id="sky">
+          <div id="text">
+            <a href="/">
+              <h2 class="title">At Bazinga,<br />we create open source projects.</h2>
+            </a>
+          </div>
+        </div>
+        <div id="cloudlimit"></div>
+        <div class="ribbon">
+            <a href="{{ page.gh_link }}" rel="me">Fork me on GitHub</a>
+        </div>
+        <div class="dm_layout_content">
+            <div class="markdown">
+                {{ content }}
+
+                <h2>Download</h2>
+                <p>
+                You can download this project in either <a href="{{ page.gh_link }}/zipball/master"><strong>zip</strong></a> or
+                <a href="{{ page.gh_link }}/tarball/master"><strong>tar</strong></a> formats.
+                </p>
+                <p>You can also clone this project:</p>
+                <pre><code>git clone {{ page.gh_repo }}</code></pre>
+            </div>
+        </div>
+        <div class="dm_layout_bottom">
+          <p>
+            <a class="link" href="http://www.bazingaweb.fr/about-us">About us</a>
+            &nbsp;|&nbsp;
+            <a class="link" href="http://www.bazingaweb.fr/prestations" title="Services">Services</a>
+            &nbsp;|&nbsp;
+            <a class="link" href="http://www.bazingaweb.fr/references" title="References">References</a>
+            &nbsp;|&nbsp;
+            <a class="link" href="http://www.bazingaweb.fr/terms-and-conditions">Terms and conditions</a>
+            &nbsp;|&nbsp;
+            <a class="link" href="http://www.bazingaweb.fr/contact" title="Contact us">Contact</a>
+          </p>
+          <p>
+            <a href="http://www.facebook.com/bazingaFr">Our Facebook page</a>
+            &nbsp;|&nbsp;
+            <a href="http://www.twitter.com/bazingaFr">Follow us on Twitter</a>
+            &nbsp;|&nbsp;
+            <a href="/atom.xml">RSS Blog</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
