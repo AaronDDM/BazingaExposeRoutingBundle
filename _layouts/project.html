@@ -1,0 +1,22 @@
+---
+layout: base
+---
+
+<div class="markdown">
+    {{ content }}
+
+    <h2>Download</h2>
+    <p>
+        You can download this project in either <a href="{{ page.gh_link }}/zipball/master"><strong>zip</strong></a> or
+        <a href="{{ page.gh_link }}/tarball/master"><strong>tar</strong></a> formats.
+    </p>
+    <p>You can also clone this project using <a href="http://git-scm.com">Git</a>:</p>
+    <pre><code>git clone {{ page.gh_repo }}</code></pre>
+
+    {% if page.ci_link %}
+        <h2>Tests</h2>
+        <p>This project is fully tested and run under <a href="http://jenkins-ci.org">Jenkins</a>.</p>
+        <p>You can visit the Jenkins page for this project: <a href="{{ page.ci_link }}">{{ page.title }} @ Jenkins</a>.</p>
+    {% endif %}
+</div>
+

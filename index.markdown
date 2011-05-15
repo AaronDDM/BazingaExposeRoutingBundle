@@ -1,8 +1,9 @@
 ---
-layout: base
+layout: project
 title: ExposeRoutingBundle
 gh_link: https://github.com/Bazinga/ExposeRoutingBundle
 gh_repo: git://github.com/Bazinga/ExposeRoutingBundle.git
+ci_link: http://ci.bazingaweb.fr/view/Symfony2/job/ExposeRoutingBundle/
 ---
 
 # ExposeRoutingBundle
