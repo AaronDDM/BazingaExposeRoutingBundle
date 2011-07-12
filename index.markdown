@@ -1,8 +1,8 @@
 ---
 layout: project
 title: ExposeRoutingBundle
-gh_link: https://github.com/Bazinga/ExposeRoutingBundle
-gh_repo: git://github.com/Bazinga/ExposeRoutingBundle.git
+gh_link: https://github.com/Bazinga/BazingaExposeRoutingBundle
+gh_repo: git://github.com/Bazinga/BazingaExposeRoutingBundle.git
 ci_link: http://ci.bazingaweb.fr/view/Symfony2/job/ExposeRoutingBundle/
 ---
 
@@ -14,7 +14,7 @@ Port of the incredible plugin [chCmsExposeRoutingPlugin](https://github.com/them
 
 Add this bundle as a submodule:
 
-    git submodule add git://github.com/Bazinga/ExposeRoutingBundle.git vendor/bundles/Bazinga/ExposeRoutingBundle
+    git submodule add git://github.com/Bazinga/BazingaExposeRoutingBundle.git vendor/bundles/Bazinga/ExposeRoutingBundle
 
 Register the namespace in `app/autoload.php`:
 
@@ -117,6 +117,7 @@ bazinga_expose_routing:
 {% endhighlight %}
 
 These routes will be added to the exposed routes.
+You can use regular expression patterns if you don't want to list all your routes name by name.
 
 You can prevent to expose a route by configuring it as below:
 
@@ -128,6 +129,14 @@ my_very_secret_route:
     options:
         expose: false
 {% endhighlight %}
+
+
+Command
+-------
+
+A command is provided to list all exposed routes: `router:debug-exposed`.
+
+    php app/console router:debug-exposed [name]
 
 
 Credits
